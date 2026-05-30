@@ -1,0 +1,66 @@
+/* ==========================================
+   Shared Section Styles
+   Import in App.css
+   ========================================== */
+
+.section {
+  padding: 6rem 2rem;
+}
+
+.section--alt {
+  background: var(--bg-2);
+}
+
+.section__inner {
+  max-width: 1200px;
+  margin: 0 auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
+}
+
+.section__inner.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section__label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  color: var(--amber);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.section__label-num {
+  opacity: 0.7;
+}
+
+.section__label-line {
+  flex: 1;
+  max-width: 200px;
+  height: 1px;
+  background: var(--border);
+}
+
+.section__heading {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 4vw, 2.75rem);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.text-amber {
+  color: var(--amber);
+}
+
+@media (max-width: 480px) {
+  .section { padding: 4rem 1.25rem; }
+}

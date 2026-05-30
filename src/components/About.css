@@ -1,0 +1,149 @@
+.about__grid {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.about__text p {
+  color: var(--text-secondary);
+  margin-bottom: 1.25rem;
+  font-size: 0.975rem;
+  line-height: 1.9;
+}
+
+.about__highlights {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.about__highlight {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  padding: 0.45rem 0.9rem;
+  border-radius: 100px;
+  transition: border-color var(--transition), color var(--transition);
+}
+
+.about__highlight:hover {
+  border-color: var(--amber-bright);
+  color: var(--amber);
+}
+
+.about__highlight-icon { font-size: 0.9rem; }
+
+/* Terminal card */
+.about__card {
+  background: var(--bg-3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  margin-bottom: 1.5rem;
+}
+
+.about__card-header {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+}
+
+.about__card-dots {
+  display: flex;
+  gap: 5px;
+}
+
+.about__card-dots span {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.about__card-dots span:nth-child(1) { background: #ff5f57; }
+.about__card-dots span:nth-child(2) { background: #febc2e; }
+.about__card-dots span:nth-child(3) { background: #28c840; }
+
+.about__card-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--text-muted);
+}
+
+.about__card-body {
+  padding: 1.25rem 1.5rem;
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  line-height: 1.9;
+}
+
+.about__code-line { display: block; }
+.about__code-line.indent { padding-left: 1.5rem; }
+
+.code-keyword { color: #c792ea; }
+.code-var { color: #82aaff; }
+.code-punct { color: var(--text-muted); }
+.code-prop { color: #f07178; }
+.code-string { color: #c3e88d; }
+.code-num { color: var(--amber); }
+.code-bool { color: #ff9cac; }
+
+/* Education */
+.about__edu {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+}
+
+.about__edu-title {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--amber);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.about__edu-item {
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.about__edu-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+.about__edu-degree {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: var(--text-primary);
+  margin-bottom: 3px;
+}
+
+.about__edu-school {
+  font-size: 0.8rem;
+  color: var(--amber);
+  margin-bottom: 2px;
+}
+
+.about__edu-period {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 900px) {
+  .about__grid { grid-template-columns: 1fr; gap: 2.5rem; }
+}
