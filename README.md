@@ -4,41 +4,6 @@ A production-grade personal portfolio built with React.js. Features a dark indus
 
 ---
 
-## 🚀 Getting Started in VS Code
-
-### Prerequisites
-- **Node.js** v16+ — Download from [nodejs.org](https://nodejs.org)
-- **VS Code** — Download from [code.visualstudio.com](https://code.visualstudio.com)
-- **Git** (optional, for version control)
-
-### Step 1 — Open in VS Code
-1. Extract the portfolio folder (if zipped)
-2. Open VS Code
-3. Go to **File → Open Folder** → select the `portfolio` folder
-
-### Step 2 — Open the Terminal
-In VS Code, press `` Ctrl + ` `` (backtick) to open the integrated terminal.
-
-### Step 3 — Install Dependencies
-```bash
-npm install
-```
-This installs all packages listed in `package.json`. Takes 1–2 minutes.
-
-### Step 4 — Start the Dev Server
-```bash
-npm start
-```
-Your browser opens automatically at **http://localhost:3000** 🎉
-
-### Step 5 — Build for Production
-When you're ready to deploy:
-```bash
-npm run build
-```
-This creates an optimized `build/` folder.
-
----
 
 ## 📁 Project Structure
 
